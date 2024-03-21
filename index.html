@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
 
-<body>
-    <script type="module">
-        import init from './fluffy-kicker.js'
+<body style="margin: 0px;">
+    <div style="height:100%">
+        <script type="module">
+            import init from './fluffy-kicker.js'
 
-        init().catch((error) => {
-            if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-                throw error;
-            }
-        });
-    </script>
+            init().catch((error) => {
+                if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+                    throw error;
+                }
+            });
+        </script>
+    </div>
 </body>
 
 </html>
