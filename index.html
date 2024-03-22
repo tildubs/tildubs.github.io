@@ -3,19 +3,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     html,
-
-    #game-container {
-        width: 100vw;
-        /* 100% of the viewport width */
-        height: 100vh;
-        /* 100% of the viewport height */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* Prevents scrolling */
     }
+
+
 </style>
 <body>
-    <div id="game-container">
+    <div>
         <script type="module">
             import init from './fluffy-kicker.js'
 
