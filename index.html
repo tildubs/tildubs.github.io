@@ -4,19 +4,14 @@
 <style>
     html,
     body {
+        height: 100%;
         margin: 0;
         padding: 0;
         overflow: hidden;
         /* Prevents scrolling */
     }
-
-    #game-container {
-        /* 100% of the viewport height */
-        background-color: #000;
-    }
 </style>
 <body>
-    <div id="game-container">
         <script type="module">
             import init from './fluffy-kicker.js'
 
@@ -26,7 +21,6 @@
                 }
             });
         </script>
-    </div>
 </body>
 
 </html>
