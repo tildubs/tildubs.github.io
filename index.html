@@ -11,10 +11,14 @@
         /* Prevents scrolling */
     }
 
-
+    #game-container {
+        height: 100vh;
+        /* 100% of the viewport height */
+        background-color: #000;
+    }
 </style>
 <body>
-    <div>
+    <div id="game-container">
         <script type="module">
             import init from './fluffy-kicker.js'
 
