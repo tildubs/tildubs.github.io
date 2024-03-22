@@ -1,8 +1,30 @@
 <!doctype html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* Prevents scrolling */
+    }
 
-<body style="margin: 0px;">
-    <div style="height:100%">
+    #game-container {
+        width: 100vw;
+        /* 100% of the viewport width */
+        height: 100vh;
+        /* 100% of the viewport height */
+        background-color: #000;
+        /* Optional: just to visualize the container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div id="game-container">
         <script type="module">
             import init from './fluffy-kicker.js'
 
