@@ -22,11 +22,16 @@
 </head>
 <body>
 <canvas id="game-canvas">
-  <!-- Your Bevy WASM game will render here -->
+  
 </canvas>
-<script>
-  // JavaScript to load and initialize your Bevy WASM game could go here
-  // Ensure to target the canvas by its ID
-</script>
+  <script type="module">
+        import init from './fluffy-kicker.js'
+
+        init().catch((error) => {
+            if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+                throw error;
+            }
+        });
+    </script>
 </body>
 </html>
