@@ -1,30 +1,20 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bevy Game Canvas Fullscreen</title>
 <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevents scrolling */
-  }
-  #game-canvas {
-    width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    display: block; /* Ensures the canvas fills the parent */
-    background-color: #000; /* Optional: just to visualize the canvas */
-  }
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        /* Prevents scrolling */
+    }
 </style>
-</head>
+
 <body>
-<canvas id="game-canvas">
-  
-</canvas>
-  <script type="module">
+    <script type="module">
         import init from './fluffy-kicker.js'
 
         init().catch((error) => {
@@ -34,4 +24,5 @@
         });
     </script>
 </body>
+
 </html>
