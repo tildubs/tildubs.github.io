@@ -11,9 +11,20 @@
         background-color: black;
         /* Prevents scrolling */
     }
+  #game-container {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-color: #000; /* Optional: just to visualize the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
 
 <body>
+    <div id="game-container">
+  <!-- Your Bevy WASM game will go here -->
+</div>
     <script type="module">
         import init from './fluffy-kicker.js'
 
