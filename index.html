@@ -8,19 +8,21 @@
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
 <body>
-            <script type="module">
-                import init from './fluffy-kicker.js'
+    <script type="module">
+        import init from './fluffy-kicker.js'
 
-                init().catch((error) => {
-                    if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-                        throw error;
-                    }
-                });
-            </script>
+        init().catch((error) => {
+            if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+                throw error;
+            }
+        });
+    </script>
 </body>
 
 </html>
