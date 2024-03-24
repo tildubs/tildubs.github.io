@@ -18,17 +18,19 @@
 </style>
 
 <body>
-    <canvas class="game-canvas">
-    <script type="module">
-        import init from './fluffy-kicker.js'
+    <div>
+        <canvas class="game-canvas">
+            <script type="module">
+                import init from './fluffy-kicker.js'
 
-        init().catch((error) => {
-            if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-                throw error;
-            }
-        });
-    </script>
-    </canvas>
+                init().catch((error) => {
+                    if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+                        throw error;
+                    }
+                });
+            </script>
+        </canvas>
+    </div>
 </body>
 
 </html>
